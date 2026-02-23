@@ -104,10 +104,10 @@ struct mm_region *mem_map = qemu_arm64_mem_map;
 
 int board_late_init(void)
 {
-	printf("\n");
-	printf("***************************************************\n");
-	printf("     * MOHAN-SAI'S CUSTOM U-BOOT BOOTLOADER *      \n");
-	printf("***************************************************\n");
+	 printf("\n");
+	 printf("***************************************************\n");
+	 printf("     * MOHAN-SAI'S CUSTOM U-BOOT BOOTLOADER *      \n");
+	 printf("***************************************************\n");
 	
 	/*
 	 * Make sure virtio bus is enumerated so that peripherals
