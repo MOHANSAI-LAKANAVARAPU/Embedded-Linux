@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# Mount essential filesystems
+mount -t proc none /proc
+mount -t sysfs none /sys
+mount -t devtmpfs devtmpfs /dev
+
+# Print welcome message
+echo ""
+echo "************************************************"
+echo "*   MOHAN-SAI'S CUSTOM LINUX SYSTEM            *"
+echo "*   Kernel booted successfully!                *"
+echo "*   Welcome to Embedded Linux                  *"
+echo "************************************************"
+echo ""
+
+# Print kernel version
+echo "Kernel version:"
+uname -a
+echo ""
+
+# Print memory info
+echo "Memory information:"
+free -h
+echo ""
+
+# Print mounted filesystems
+echo "Mounted filesystems:"
+mount
+echo ""
+
+# Start shell
+echo "Starting shell..."
+exec /bin/sh
